@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giỏ hàng</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="/store/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+    <body>
+        <!-- 🔶 Thanh thông báo chạy -->
+        <section>
+            <div class="marquee-bar">
+                <div class="marquee-text">
+                    ❄️ ProCOOL NEW GEN - MAX LẠNH PRO HƠN &nbsp;&nbsp;&nbsp; 🚚 Miễn phí vận chuyển đơn từ 399K
+                    &nbsp;&nbsp;&nbsp; 💥 Đổi trả dễ dàng trong 7 ngày &nbsp;&nbsp;&nbsp; 🔥 Hàng mới về mỗi tuần
+                    &nbsp;&nbsp;&nbsp; ❄️ ProCOOL NEW GEN - MAX LẠNH PRO HƠN &nbsp;&nbsp;&nbsp; 🚚 Miễn phí vận chuyển
+                    đơn từ 399K &nbsp;&nbsp;&nbsp; 💥 Đổi trả dễ dàng trong 7 ngày &nbsp;&nbsp;&nbsp; 🔥 Hàng mới về mỗi
+                    tuần
+                </div>
+            </div>
+        </section>
+        <!-- Thanh header -->
+        <section id="main-header">
+            <!-- Logo -->
+            <a href="index.html"><img height="50" width="180" src="/store/img/logo.png" alt="logo" /></a>
+            <div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="product.html">Sản Phẩm</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li>
+                        <a href="#" class="icon-btn" title="Tìm kiếm"><i class="bx bx-search"></i></a>
+                        <a href="love.html" class="icon-btn" title="Yêu thích"><i class="bx bx-heart"></i></a>
+                        <a href="cart.html" class="icon-btn" title="Giỏ hàng"><i class="bx bx-cart"></i></a>
+                    </li> -->
+                    <li>
+                        <a href="#" class="icon-btn" title="Tìm kiếm"><i class="bx bx-search"></i></a>
+
+                        <a href="love.html" class="icon-btn" title="Yêu thích">
+                            <span class="icon-wrapper">
+                                <i class="bx bx-heart"></i>
+                                <span class="badge">0</span>
+                            </span>
+                        </a>
+
+                        <a href="cart.html" class="icon-btn" title="Giỏ hàng">
+                            <span class="icon-wrapper">
+                                <i class="bx bx-cart"></i>
+                                <span class="badge">0</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div id="mobile">
+                <a href="cart.html" class="icon-btn" title="Giỏ hàng">
+                    <span class="icon-wrapper">
+                        <i class="bx bx-cart"></i>
+                        <span class="badge">0</span>
+                    </span>
+                </a>
+                <i id="bar" class="bx bx-menu"></i>
+            </div> -->
+        </section>
+        <section id="page-header" class="about-header">
+            <h2>#Giỏ hàng</h2>
+            <p>add your coupon code & SAVE upto 70%</p>
+        </section>
+        <!-- 🔶 Giỏ hàng -->
+         <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Hình ảnh</td>
+                        <td>Sản phẩm</td>
+                        <td>Giá</t>
+                        <td>Số lượng</t>
+                        <td>Tổng tiền</td>
+                        <td>Xóa</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/store/img/cuonlenpng/Layer 5.png" alt="" /></td>
+                        <td>Cuộn len màu xám</td>
+                        <td>399.000₫</td>
+                        <td><input type="number" value="1" min="1" /></td>
+                        <td>399.000₫</td>
+                        <td><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/store/img/cuonlenpng/Layer 4.png" alt="" /></td>
+                        <td>Cuộn len màu vàng</td>
+                        <td>399.000₫</td>
+                        <td><input type="number" value="1" min="1" /></td>
+                        <td>399.000₫</td>
+                        <td><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/store/img/cuonlenpng/Layer 3.png" alt="" /></td>
+                        <td>Cuộn len màu cam</td>
+                        <td>399.000₫</td>
+                        <td><input type="number" value="1" min="1" /></td>
+                        <td>399.000₫</td>
+                        <td><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <!-- Thêm các sản phẩm khác nếu cần -->
+                </tbody>
+            </table>
+         </section>
+         <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Nhập mã giảm giá</h3>
+                <div>
+                    <input type="text" placeholder="Nhập mã giảm giá" />
+                    <button class="normal">Áp dụng</button>
+                </div>
+            </div>
+            <div id="cart-total">
+                <h3>Tổng giỏ hàng</h3>
+                <table>
+                    <tr>
+                        <td>Tổng tiền</td>
+                        <td>1.197.000₫</td>
+                    </tr>
+                    <tr>
+                        <td>Giảm giá</td>
+                        <td>0₫</td>
+                    </tr>
+                    <tr class="total">
+                        <td><strong>Tổng cộng</strong></td>
+                        <td><strong>1.197.000₫</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Thanh toán</button>
+            </div>
+         </section>
+        <!-- 🔶 Footer -->
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" height="50" width="180" src="/store/img/logo.png" alt="" />
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> hcm city</p>
+                <p><strong>Phone:</strong> +0899422555</p>
+                <p><strong>Hours:</strong> 10:00 - 20:00, Mon - Sat</p>
+
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-pinterest-alt"></i>
+                        <i class="bx bxl-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="/store/img/img/pay/app.jpg" alt="" />
+                    <img src="/store/img/img/pay/play.jpg" alt="" />
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="/store/img/img/pay/pay.png" alt="" />
+            </div>
+            <div class="copyright">
+                <p>© 2025, Shoplen Store - All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
