@@ -298,3 +298,106 @@ document.addEventListener('DOMContentLoaded', function () {
         return span;
     }
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Cấu hình
+//     const productsPerPage = 8;
+//     const allProducts = document.querySelectorAll('.pro-container .pro');
+//     const totalProducts = allProducts.length;
+//     const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+//     // DOM elements
+//     const prevBtn = document.querySelector('.page-nav.prev');
+//     const nextBtn = document.querySelector('.page-nav.next');
+//     const pageNumbersContainer = document.querySelector('.page-numbers');
+
+//     let currentPage = 1;
+
+//     // Khởi tạo phân trang
+//     function initPagination() {
+//         // Chỉ tạo lại phân trang nếu cần
+//         if (pageNumbersContainer.children.length === 0 ||
+//             parseInt(pageNumbersContainer.lastChild.textContent) !== totalPages) {
+
+//             pageNumbersContainer.innerHTML = '';
+
+//             // Luôn hiển thị trang 1
+//             addPageNumber(1);
+
+//             // Hiển thị dấu ... nếu có nhiều trang
+//             if (totalPages > 4) {
+//                 const dots = document.createElement('span');
+//                 dots.className = 'page-dots';
+//                 dots.textContent = '...';
+//                 pageNumbersContainer.appendChild(dots);
+//             }
+
+//             // Hiển thị 3 trang cuối
+//             for (let i = Math.max(2, totalPages - 2); i <= totalPages; i++) {
+//                 addPageNumber(i);
+//             }
+//         }
+
+//         updateNavButtons();
+//     }
+
+//     function addPageNumber(number) {
+//         const pageBtn = document.createElement('a');
+//         pageBtn.href = '#';
+//         pageBtn.className = 'page-number';
+//         pageBtn.textContent = number;
+//         pageBtn.addEventListener('click', function(e) {
+//             e.preventDefault();
+//             goToPage(number);
+//         });
+//         pageNumbersContainer.appendChild(pageBtn);
+//     }
+
+//     // Hiển thị trang cụ thể
+//     function showPage(page) {
+//         const start = (page - 1) * productsPerPage;
+//         const end = Math.min(start + productsPerPage, totalProducts);
+
+//         allProducts.forEach((product, index) => {
+//             product.style.display = (index >= start && index < end) ? 'block' : 'none';
+//         });
+//     }
+
+//     // Chuyển trang
+//     function goToPage(page) {
+//         if (page < 1 || page > totalPages || page === currentPage) return;
+
+//         currentPage = page;
+//         showPage(currentPage);
+//         updateActivePage();
+//         updateNavButtons();
+//     }
+
+//     // Cập nhật trang active
+//     function updateActivePage() {
+//         document.querySelectorAll('.page-number').forEach(btn => {
+//             btn.classList.toggle('active', parseInt(btn.textContent) === currentPage);
+//         });
+//     }
+
+//     // Cập nhật nút điều hướng
+//     function updateNavButtons() {
+//         prevBtn.style.visibility = currentPage === 1 ? 'hidden' : 'visible';
+//         nextBtn.style.visibility = currentPage === totalPages ? 'hidden' : 'visible';
+//     }
+
+//     // Sự kiện click
+//     prevBtn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         goToPage(currentPage - 1);
+//     });
+
+//     nextBtn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         goToPage(currentPage + 1);
+//     });
+
+//     // Khởi chạy
+//     initPagination();
+//     showPage(1);
+//     updateActivePage();
+// });
