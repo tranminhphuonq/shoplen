@@ -118,7 +118,7 @@ body {
 #nav-menu a,
 .icon-btn {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: 650;
     position: relative;
     transition: color 0.3s;
