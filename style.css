@@ -838,7 +838,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(./img/banner/b2.jpg);
+    background-image: url(./img/banner/b9.png);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -847,16 +847,16 @@ body {
 #banner h4 {
     font-size: 20px;
     font-weight: 500;
-    color: #fff;
+    color: #000000;
 }
 #banner h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
     padding: 10px 0;
 }
 #banner span {
-    color: #ffcc00;
+    color: #2f00ff;
 }
 #banner button {
     padding: 10px 20px;
@@ -1046,10 +1046,16 @@ button.white {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(./img/banner/b3.jpg);
+    background-image: url(./img/banner/b7.png);
     background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-color: #222;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 80px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(71, 71, 71, 0.1);
+    color: #feffff;
+    background-color: #9910e7;
 }
 #newsletter h4 {
     font-size: 22px;
@@ -1062,7 +1068,7 @@ button.white {
     color: #feffff;
 }
 #newsletter p span {
-    color: #ffbd27;
+    color: #ff0095;
 }
 #newsletter .form {
     display: flex;
